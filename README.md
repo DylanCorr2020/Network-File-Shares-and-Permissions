@@ -60,6 +60,25 @@ Before starting this tutorial please check out the active directory lab as this 
 
 # Part Two 
 
+## Step 1:
+
+- On Client-1, navigate to the shared folder (start, run, \\dc-1)
+- Try to access the folders you just created. Which folders can you access?    Which folders can you create stuff in?
+
+- If set up correctly you should not be able to open no-access folder get the following message
+
+<img width="100%" height="75" alt="Image" src="https://github.com/user-attachments/assets/1122daac-d7d0-4b60-868d-eeca3608bee0" />
+
+- <your user> is a part of the domain users group so we should be able to access the read-access but we not able to create files only read
+
+<img width="100%" height="75" alt="Image" src="https://github.com/user-attachments/assets/4c799f70-9893-4c09-8cfc-9eec6f0c67d7" />
+
+- Write access folder should allow you to create and save files 
+
+- Accountants folder did not show because did not configure any sharing for it. 
+
+  
+
 
 
 
