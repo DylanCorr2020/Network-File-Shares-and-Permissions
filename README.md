@@ -109,6 +109,20 @@ Before starting this tutorial please check out the active directory lab as this 
   <img  width="100%" height="75%" alt="Image" src="https://github.com/user-attachments/assets/39801b59-6f72-4391-b795-7bcf0d202a7d" />
 
 
+# Conclusion 
+
+By following this step-by-step guide, you've:
+
+- Created secure shared folders with different permission levels
+
+- Tested real-world access scenarios from a domain-joined client
+
+- Learned how group membership directly impacts folder accessibility
+
+- Gained hands-on experience with Active Directory, RDP, and Windows folder permissions
+
+
+
 
 
 
