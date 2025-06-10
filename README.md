@@ -16,7 +16,7 @@ Before starting this tutorial please check out the active directory lab as this 
 - Remote Desktop
 - Shared Network Files
 
-# Part One 
+# Part One: Create Folders and Asign Permissions 
 
 ## Step 1: 
 
@@ -58,7 +58,7 @@ Before starting this tutorial please check out the active directory lab as this 
 - (Skip accounting for now)
 
 
-# Part Two 
+# Part Two: Test Access to Folders on Client-1
 
 ## Step 1:
 
@@ -78,6 +78,59 @@ Before starting this tutorial please check out the active directory lab as this 
 - Accountants folder did not show because did not configure any sharing for it. 
 
   
+# Part Three: Create an Accountants Security Group , assign permissions and test access
+
+
+## Step 1:
+- Go back to DC-1, in Active Directory, create a security group called “ACCOUNTANTS”
+- First create an Organizational Unit _GROUPS
+- Right Click mydomian.com > new > Organisational Groups
+- Once created right click on GROUPS > New > Group
+- Name the group ACCOUNTANTS > click Okay
+
+
+<img width="100%" height="75%"  alt="Image" src="https://github.com/user-attachments/assets/94460d31-3f78-45cc-8f3a-055f11a6dd27" />
+
+## Step 2:
+
+
+- On the “accounting” folder you created earlier, set the following permissions
+- Folder "accounting" group "ACCOUNTANTS" Permissions: "Read/Write"
+
+<img width="100%" height="75%" alt="Image" src="https://github.com/user-attachments/assets/8372b4d4-7ac1-4054-afc0-89ac02fe08ec" />
+
+
+- On Client-1, as  <someuser>, try to access the accountants folder. It should fail.
+- Log out of Client-1 as  <someuser>
+- On DC-1, make <someuser> a member of the “ACCOUNTANTS”  Security Group
+- Go back into Active Directory Users and Computers > double click on ACCOUNTANTS security group > click members > click Add > add name of user > Click Check Names > click Okay
+- Sign back into Client-1 as <someuser> and try to access the “accounting” share in \\DC-1\ - Does it work now?
+
+  <img  width="100%" height="75%" alt="Image" src="https://github.com/user-attachments/assets/39801b59-6f72-4391-b795-7bcf0d202a7d" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
